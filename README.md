@@ -1,5 +1,5 @@
 # Investigating the complexity of algorithms by Big(O) notation
-What is big o notation?
+## What is big o notation?
 > We use big o to describe the performance of an algorithm and this helps us to determine if a given algorithm is scalable or not which basically means is this algorithm going to scale well as the input grows really large. In other words, certain operations can be more or less costly depending on what data structure we use. For instance, accessing an array element by its index is superfast but arrays have a fixed length and if you want to constantly add or remove items from them, they have to get resized and this will get costly as the size of our input grows very large. So if that's what we need to do then we have to use another data structure called a link list these data structures can grow or shrink very quickly but accessing a link list element by its index is slow so that's why you need to learn about the big o notation first before we can talk about various data structures.
 
 ## 💡 Constant time complexity or O(1): 
@@ -32,7 +32,7 @@ n represents the size of the input and as n grows the cost of this algorithm als
  => O(n)
 ```
 
-If our method has two extera lines of code like below:
+ > If our method has two extera lines of code like below:
 ```
 public void Log(string[] input)
 {
@@ -47,10 +47,10 @@ public void Log(string[] input)
 // =>  O(1 + n + 1) = O(2 + n) => O(n)
 ```
 
-Now the runtime complexity of this method is O(1 + n + 1) which we can simplify to  O(2 + n). But when using the big o notation, we drop this constants because they don't really matter. Because if our array has one million inputs adding two extra operations doesn't really have a significant impact on the cost of our algorithm and the cost of our algorithm still increases linearly so we can simplify this by drop constants. What matters is that the cost of this algorithm increases linearly and in
+ > Now the runtime complexity of this method is O(1 + n + 1) which we can simplify to  O(2 + n). But when using the big o notation, we drop this constants because they don't really matter. Because if our array has one million inputs adding two extra operations doesn't really have a significant impact on the cost of our algorithm and the cost of our algorithm still increases linearly so we can simplify this by drop constants. What matters is that the cost of this algorithm increases linearly and in
 direct proportion to the size of our input.
 
-If we repeat the loop over an array twice sperately, as shown below:
+ > If we repeat the loop over an array twice sperately, as shown below:
 ```
 public void Log(string[] input)
 {
@@ -68,9 +68,9 @@ public void Log(string[] input)
 // =>  O(n + n) = O(2n) => O(n)
 ```
 
-We dropped the constant because all we need is an approximation of the cost of this algorithm relative to its input size. So n or two n still represent a linear growths. 
+ > We dropped the constant because all we need is an approximation of the cost of this algorithm relative to its input size. So n or two n still represent a linear growths. 
 
-If we change the inputs of method to two array with diffirent sizes like this:
+ > If we change the inputs of method to two array with diffirent sizes like this:
 
 ```
 public void Log(string[] input1, string[] input2)
@@ -89,7 +89,7 @@ public void Log(string[] input1, string[] input2)
 // => O(n + m) => => O(n)
 ```
 
-In order to distinguish between these two inputs we could use different name (n and m). So the runtime complexity the method is going to be O(n + m) and we can simplify this to O(n) because the runtime of this method increases linearly.
+ > In order to distinguish between these two inputs we could use different name (n and m). So the runtime complexity the method is going to be O(n + m) and we can simplify this to O(n) because the runtime of this method increases linearly.
 
 ## 💡 Quadratic time complexity or O(n^2): 
 > Suppose that we have a neted loop like this:
@@ -112,7 +112,7 @@ public void Log(string[] input)
 > When we're iterating over the outer input array, we have O(n) then in each iteration once again we're iterating over all the items in this array. therefore the runtime complexity of this method is O(n * n) or O(n^2). This algorithm runs in quadratic time that gets slower than algorithms that run in O(n). As the input grow larger and larger algorithms that run in O(n^2) get slower and slower.
 
 
-Now if we add another loop outside the previous like this:
+ > Now if we add another loop outside the previous like this:
 
 ```
  public void Log(string[] input)
@@ -133,9 +133,9 @@ Now if we add another loop outside the previous like this:
 
 O(n + n^2) => O(n^2)
 ```
-In O(n + n^2) expression n squared always grows faster than n. So the final time complexity is O(n^2). Becuase all we need is an approximation not an exact value so here we can drop n and conclude that this method runs in O(n^2).
+ > In O(n + n^2) expression n squared always grows faster than n. So the final time complexity is O(n^2). Becuase all we need is an approximation not an exact value so here we can drop n and conclude that this method runs in O(n^2).
 
-I we add another loop to previous one like this:
+ > If we add another loop to previous one like this:
 ```
 public void Log(string[] input)
 {
@@ -153,4 +153,4 @@ public void Log(string[] input)
  // => O(n * n * n) => O(n^3)
 ```
 
-Now the runtime complexity is O(n^3) that gets far slower than an algorithm with O(n^2)
+ > Now the runtime complexity is O(n^3) that gets far slower than an algorithm with O(n^2)
