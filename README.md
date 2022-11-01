@@ -16,7 +16,7 @@
  => O(1)
 ```
 
-## 💡 linear time complexity or O(n): 
+## 💡 Linear time complexity or O(n): 
  > When we're iterating over all the items in an array and printing each item on the console, this is where the size of the input matters. If the array has a single item, we will have one print operation. In the same way, if we have a million items, obviously we will have a million print operations. Therefor the cost of this algorithm grows linearly and in direct correlation to the size of the input. So we represent the runtime complexity of this method using the big o of n.
 n represents the size of the input and as n grows the cost of this algorithm also grows linearly.
 
@@ -153,4 +153,7 @@ public void Log(string[] input)
  // => O(n * n * n) => O(n^3)
 ```
 
- > Now the runtime complexity is O(n^3) that gets far slower than an algorithm with O(n^2)
+ > Now the runtime complexity is O(n^3) that gets far slower than an algorithm with O(n^2).
+
+## 💡 Logarithmic time complexity or O(log n): 
+ > logarithmic
