@@ -162,4 +162,4 @@ public void Log(string[] input)
 
 
 ## 💡 Exponential time complexity or O(2^n): 
- > An algorithm
+ > The exponential growth is the opposite of the logarithmic growth. The logarithmic curve slows down as the input size growth but exponential curve growths faster and faster. Therfore an algorithm that runs in exponential time is not scalable at all and it will become very slow very soon.
