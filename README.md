@@ -90,3 +90,67 @@ public void Log(string[] input1, string[] input2)
 ```
 
 In order to distinguish between these two inputs we could use different name (n and m). So the runtime complexity the method is going to be O(n + m) and we can simplify this to O(n) because the runtime of this method increases linearly.
+
+## 💡 Quadratic time complexity or O(n^2): 
+> Suppose that we have a neted loop like this:
+
+```
+public void Log(string[] input)
+ {
+     for (int i = 0; i < input.Length; i++)  // => O(n)
+     {
+         for (int j = 0; j < input.Length; j++)  // => O(n)
+         {
+             System.Console.WriteLine("Some text");
+         }
+     }
+ }
+ 
+ // => O(n * n) => O(n^2)
+```
+
+> When we're iterating over the outer input array, we have O(n) then in each iteration once again we're iterating over all the items in this array. therefore the runtime complexity of this method is O(n * n) or O(n^2). This algorithm runs in quadratic time that gets slower than algorithms that run in O(n). As the input grow larger and larger algorithms that run in O(n^2) get slower and slower.
+
+
+Now if we add another loop outside the previous like this:
+
+```
+ public void Log(string[] input)
+{
+    for (int k = 0; k < input.Length; k++)  // => O(n)
+    {
+        System.Console.WriteLine("Some text");
+    }
+
+    for (int i = 0; i < input.Length; i++)  // => O(n)
+    {
+        for (int j = 0; j < input.Length; j++)  // => O(n)
+        {
+            System.Console.WriteLine("Some text");
+        }
+    }
+}
+
+O(n + n^2) => O(n^2)
+```
+In O(n + n^2) expression n squared always grows faster than n. So the final time complexity is O(n^2). Becuase all we need is an approximation not an exact value so here we can drop n and conclude that this method runs in O(n^2).
+
+I we add another loop to previous one like this:
+```
+public void Log(string[] input)
+{
+    for (int i = 0; i < input.Length; i++)  // => O(n)
+    {
+        for (int j = 0; j < input.Length; j++)  // => O(n)
+        {
+            for (int k = 0; k < input.Length; k++)  // => O(n)
+            {
+                System.Console.WriteLine("Some text");
+            }
+        }
+    }
+}
+ // => O(n * n * n) => O(n^3)
+```
+
+Now the runtime complexity is O(n^3) that gets far slower than an algorithm with O(n^2)
