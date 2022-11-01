@@ -1,1 +1,3 @@
-# AlgorithmComplexity-BigO
+# Investigating the complexity of algorithms by Big(O) notation
+What is big o notation?
+> we use big o to describe the performance of an algorithm and this helps us to determine if a given algorithm is scalable or not which basically means is this algorithm going to scale well as the input grows really large. In other words, certain operations can be more or less costly depending on what data structure we use. For instance, accessing an array element by its index is superfast but arrays have a fixed length and if you want to constantly add or remove items from them, they have to get resized and this will get costly as the size of our input grows very large.
