@@ -140,6 +140,10 @@ public void Log(string[] input1, string[] input2)
 
  > In order to distinguish between these two inputs we could use different name (n and m). So the runtime complexity the method is going to be O(n + m) and we can simplify this to O(n) because the runtime of this method increases linearly.
 
+![image](https://user-images.githubusercontent.com/45565026/199467791-338b179f-9293-498c-a4d1-6d0f4f0b4684.png)
+
+O(n) is always going to be a straight line, it is proportional to the number of operations.
+
 ## 💡 Quadratic time complexity or O(n^2): 
 > Suppose that we have a neted loop like this:
 
