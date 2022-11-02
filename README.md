@@ -8,7 +8,7 @@ Assume that there is a for loop to iterate through an array from one to seven in
 ![image](https://user-images.githubusercontent.com/45565026/199462065-d297b963-fc3d-4995-8b4a-e7989c01a54c.png)
 
 - If we're looking for the number one, this is our best case with the least number of iterations through the array. (best case that is represented with the Greek letter Omega)
-- 4 is the average case that is represented with the Greek letter tetha
+- 4 is the average case that is represented with the Greek letter thêta
 - 7 is the worst case that is represented with Omicron or O. So, technically, there is no best case or average case of Be(O). Big(O) is always going to be worst case.
 
 In conclusion, when we measure Big O, we are always measuring the worst case.
