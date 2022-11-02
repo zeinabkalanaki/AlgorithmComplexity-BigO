@@ -203,7 +203,7 @@ public void Log(string[] input)
         }
     }
 }
- // => O(n * n * n) => O(n^3)
+ // => O(n * n * n) = O(n^3) => O(n^2)
 ```
 
  > Now the runtime complexity is O(n^3) that gets far slower than an algorithm with O(n^2).
