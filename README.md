@@ -224,5 +224,13 @@ if we had two sets of code that accomplish the same task and one was O(n^2) and 
  > But when we use binary search, the time complexity of the algoritem becomes logarithmic, which is so faster than linear one. Assume that our array is sorted. In this approach we start off by looking at the middle item and check if is this item smaller or greater than the value we're looking for. If it's smaller so our target number in this case ten must be in the right partition of this array, so we don't need to inspect any of the items in the left partition and with this we can narrow down our search by half. Then, in the right partition again we look at the middle item is it smaller or greater than the target value it's smaller so again we ignore the items on the left and focus on the items on the right. So in every step we're essentially narrowing down our search by half with this algorithm. If we have one million items in our array we can find the target item with the maximum of 19 comparisons.
 
 
+![image](https://user-images.githubusercontent.com/45565026/199492581-2c43cb97-9b57-4cf9-9ed6-a5457b4ebe8f.png)
+
+ means 2 to the what power is 8
+![image](https://user-images.githubusercontent.com/45565026/199492364-931a96d0-ff60-46a3-a61a-bd4ad5096915.png)
+
+
+
+
 ## 💡 Exponential time complexity or O(2^n): 
  > The exponential growth is the opposite of the logarithmic growth. The logarithmic curve slows down as the input size growth but exponential curve growths faster and faster. Therfore an algorithm that runs in exponential time is not scalable at all and it will become very slow very soon.
