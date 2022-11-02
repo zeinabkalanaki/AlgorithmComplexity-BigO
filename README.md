@@ -208,6 +208,11 @@ public void Log(string[] input)
 
  > Now the runtime complexity is O(n^3) that gets far slower than an algorithm with O(n^2).
 
+![image](https://user-images.githubusercontent.com/45565026/199470349-ffa891da-75f3-424c-a110-2682dee1e92f.png)
+
+if we had two sets of code that accomplish the same task and one was O(n^2) and the other was O(n), the O(n) code is better because it's going to complete the task in fewer operations. O(n^2) is generally considered inefficient code, if you can write your code in a way that is going to become O(n), then it is going to be much more efficient.
+
+
 ## 💡 Logarithmic time complexity or O(log n): 
  > An algorithm that runs in logarithmic time is more efficient and more scalable than an algorithm that runs in linear or quadratic time. Supposed that we have an array of sorted number from one to ten and we want to find the number ten. One way to find the ten is to iterate over this array using a four loop going forward until we find the ten. This is called the linear search because it runs in linear time in the worst case scenario. In other word, if the number we're looking for is at the end of our array we have to inspect every cell in this array to find the target number so the more items we have the longer this operation is going to take. So the run time of this algorithm increases linearly and in direct proportion with the size of our array.
  > 
