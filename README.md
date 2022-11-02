@@ -65,6 +65,11 @@ public void PrintStudentNames(string[] names)
  => O(1)
 ```
 
+![image](https://user-images.githubusercontent.com/45565026/199474481-bbf648fe-dce2-4228-813f-da9b3f9bd715.png)
+
+O(1) is just a flat line across the bottom, it is the most efficient Big(O), nothing is more efficient than O(1).
+
+
 ## 💡 Linear time complexity or O(n): 
  > When we're iterating over all the items in an array and printing each item on the console, this is where the size of the input matters. If the array has a single item, we will have one print operation. In the same way, if we have a million items, obviously we will have a million print operations. Therefor the cost of this algorithm grows linearly and in direct correlation to the size of the input. So we represent the runtime complexity of this method using the big o of n.
 n represents the size of the input and as n grows the cost of this algorithm also grows linearly.
