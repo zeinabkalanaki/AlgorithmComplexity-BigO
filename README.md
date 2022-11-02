@@ -1,4 +1,18 @@
 # Investigating the complexity of algorithms by Big(O) notation
+
+## What is Big O notation?
+There are three Greek letters for representing different execution modes (Omega, Theta and Omicron-known as Big(O)).
+
+Assume that there is a for loop to iterate through an array from one to seven in order to find a particular number.
+
+![image](https://user-images.githubusercontent.com/45565026/199462065-d297b963-fc3d-4995-8b4a-e7989c01a54c.png)
+
+- If we're looking for the number one, this is our best case with the least number of iterations through the array. (best case that is represented with the Greek letter Omega)
+- 4 is the average case that is represented with the Greek letter tetha
+- 7 is the worst case that is represented with Omicron or O. So, technically, there is no best case or average case of Be(O). Big(O) is always going to be worst case.
+
+In conclusion, when we measure Big O, we are always measuring the worst case.
+
 ## Why we need Big O Notation?
 > We use big o to describe the performance of an algorithm and this helps us to determine if a given algorithm is scalable or not which basically means is this algorithm going to scale well as the input grows really large. In other words, certain operations can be more or less costly depending on what data structure we use. For instance, accessing an array element by its index is superfast but arrays have a fixed length and if you want to constantly add or remove items from them, they have to get resized and this will get costly as the size of our input grows very large. So if that's what we need to do then we have to use another data structure called a link list these data structures can grow or shrink very quickly but accessing a link list element by its index is slow so that's why you need to learn about the big o notation first before we can talk about various data structures.
 
