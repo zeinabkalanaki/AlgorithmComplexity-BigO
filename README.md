@@ -34,6 +34,9 @@ public void PrintStudentNames(string[] names)
 
 > when we talk about space complexity, we only look at the additional space that we should relative to the size of the input. We always have the input of size n, so we don't count it. we just analyze how much extra space we need to allocate for this algorithm. 
 
+## Types of complexity
+ ![image](https://user-images.githubusercontent.com/45565026/199409882-7e2756db-07df-4617-9e8b-03db18b10130.png)
+
 ## 💡 Constant time complexity or O(1): 
  > When talking about the runtime complexity, we don't really care about the number of operations. Instead, we just want to know how much an algorithm slows down as the input grows larger. So in method below whether we have one or one million items our method runs in constant time, so we can simplify this by writing down o of one meaning constant time. In other words O(1) = O(2) = O(1,000,000)
 
