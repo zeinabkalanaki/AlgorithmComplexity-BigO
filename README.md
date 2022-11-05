@@ -249,13 +249,18 @@ public void Log(string[] input)
 ![image](https://user-images.githubusercontent.com/45565026/200106469-8e4eaebf-9a90-48d5-98c3-4a8dcf8e7062.png)
 
 
- > So in every step we're essentially narrowing down our search by half with this algorithm. If we have one million items in our array we can find the target item with the maximum of 19 comparisons. This is a technique called divide and conquer.
+ > So in every step we're essentially narrowing down our search by half with this algorithm. If we have one million items in our array we can find the target item with the maximum of 19 comparisons. This is a technique called divide and conquer. 
 
-> We had eight items in the array and in 3 steps we find the answer. So when n is 8, O(log(n)) or log(8) means 2 to the what power is 8
+> We had eight items in the array and in 3 steps we find the answer. So when n is 8, O(log(n)) or log(8) means 2 to the what power is 8. or How many times would you have to cut this number in half to get down to one item?
 
 ![image](https://user-images.githubusercontent.com/45565026/200107378-0ed02391-a51e-47fa-b0d4-e29c19bc5e87.png)
 
-> The answer of the above equation is 3, which is the number the stpes we have to take to find the asnswer.
+> The answer of the above equation is 3, which is the number the stpes we have to take to find the asnswer. To put it another way, if we take the number eight and we repeatedly cut it in half, we divide it by two, how many times do we have to divide it by two to get down to one item? that is three times.
+
+> So if you had an array with a billion items in it and you were going to iterate through that array linearly to find something and say what you were looking for was the last item, you would have to look at a billion items to find it. But if you use divide and conquer, you could find any item in that array in thirty one steps.
+
+![image](https://user-images.githubusercontent.com/45565026/200107905-17bebbe1-8359-425b-9185-2d6247482c74.png)
+
 
 
 
