@@ -261,8 +261,8 @@ public void Log(string[] input)
 
 ![image](https://user-images.githubusercontent.com/45565026/200107905-17bebbe1-8359-425b-9185-2d6247482c74.png)
 
-
-
+> this is very flat, not as flat as of one, of course, but very flat, very efficient compared to all then and olivine squared at this point.
+![image](https://user-images.githubusercontent.com/45565026/200108045-d4661b86-5d33-47a8-ba6e-c8a7ae975b47.png)
 
 
 ## 💡 Exponential time complexity or O(2^n): 
