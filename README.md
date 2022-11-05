@@ -215,19 +215,47 @@ public void Log(string[] input)
 
 ![image](https://user-images.githubusercontent.com/45565026/199470349-ffa891da-75f3-424c-a110-2682dee1e92f.png)
 
-if we had two sets of code that accomplish the same task and one was O(n^2) and the other was O(n), the O(n) code is better because it's going to complete the task in fewer operations. O(n^2) is generally considered inefficient code, if you can write your code in a way that is going to become O(n), then it is going to be much more efficient.
+ > If we had two sets of code that accomplish the same task and one was O(n^2) and the other was O(n), the O(n) code is better because it's going to complete the task in fewer operations. O(n^2) is generally considered inefficient code, if you can write your code in a way that is going to become O(n), then it is going to be much more efficient.
 
 
 ## 💡 Logarithmic time complexity or O(log n): 
  > An algorithm that runs in logarithmic time is more efficient and more scalable than an algorithm that runs in linear or quadratic time. Supposed that we have an array of sorted number from one to ten and we want to find the number ten. One way to find the ten is to iterate over this array using a four loop going forward until we find the ten. This is called the linear search because it runs in linear time in the worst case scenario. In other word, if the number we're looking for is at the end of our array we have to inspect every cell in this array to find the target number so the more items we have the longer this operation is going to take. So the run time of this algorithm increases linearly and in direct proportion with the size of our array. 
  > 
- > But when we use binary search, the time complexity of the algoritem becomes logarithmic, which is so faster than linear one. Assume that our array is sorted. In this approach we start off by looking at the middle item and check if is this item smaller or greater than the value we're looking for. If it's smaller so our target number in this case ten must be in the right partition of this array, so we don't need to inspect any of the items in the left partition and with this we can narrow down our search by half. Then, in the right partition again we look at the middle item is it smaller or greater than the target value it's smaller so again we ignore the items on the left and focus on the items on the right. So in every step we're essentially narrowing down our search by half with this algorithm. If we have one million items in our array we can find the target item with the maximum of 19 comparisons. This is a technique called divide and conquer.
+ > But when we use binary search, the time complexity of the algoritem becomes logarithmic, which is so faster than linear one. 
+ > Assume that there is a sorted array and we're going to look for the number one
+ 
+ ![image](https://user-images.githubusercontent.com/45565026/200105226-e1796ba4-6619-43db-aab3-f09ffd662322.png)
+
+ > In order to search the array, cut it in half. Because we are sure the answer is not in the second half. So we don't even have to look at any of those numbers and that may not seem like a big deal when you have an array with eight items in it. But if you have an array with a million items in it, you just made it where you have a half a million items that you don't have to look at.
 
 
-![image](https://user-images.githubusercontent.com/45565026/199492581-2c43cb97-9b57-4cf9-9ed6-a5457b4ebe8f.png)
+> Step 1:
 
- means 2 to the what power is 8
-![image](https://user-images.githubusercontent.com/45565026/199492364-931a96d0-ff60-46a3-a61a-bd4ad5096915.png)
+
+![image](https://user-images.githubusercontent.com/45565026/200106126-d8b087f4-08bc-41a2-9be1-a98891b4ab2d.png)
+
+> So then we do this again and again.
+
+> Step 2:
+
+![image](https://user-images.githubusercontent.com/45565026/200106421-b7f20786-d18a-444f-a1e4-ebb8f0c30694.png)
+
+> Step 3:
+
+![image](https://user-images.githubusercontent.com/45565026/200106441-3f5fcf20-d70d-4132-a421-393f01f2af77.png)
+
+> And now we have found the number one.
+
+![image](https://user-images.githubusercontent.com/45565026/200106469-8e4eaebf-9a90-48d5-98c3-4a8dcf8e7062.png)
+
+
+ > So in every step we're essentially narrowing down our search by half with this algorithm. If we have one million items in our array we can find the target item with the maximum of 19 comparisons. This is a technique called divide and conquer.
+
+> We had eight items in the array and in 3 steps we find the answer. So when n is 8, O(log(n)) or log(8) means 2 to the what power is 8
+
+![image](https://user-images.githubusercontent.com/45565026/200107378-0ed02391-a51e-47fa-b0d4-e29c19bc5e87.png)
+
+> The answer of the above equation is 3, which is the number the stpes we have to take to find the asnswer.
 
 
 
