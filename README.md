@@ -140,7 +140,7 @@ public void Log(string[] input1, string[] input2)
     }
 }
 
-// => O(n + m) => => O(n)
+// => O(n + m) => O(n) because the runtime of this method increases linearly
 ```
 
  > In order to distinguish between these two inputs we could use different name (n and m). So the runtime complexity the method is going to be O(n + m) and we can simplify this to O(n) because the runtime of this method increases linearly.
