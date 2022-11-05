@@ -262,6 +262,7 @@ public void Log(string[] input)
 ![image](https://user-images.githubusercontent.com/45565026/200107905-17bebbe1-8359-425b-9185-2d6247482c74.png)
 
 > O(log(n)) is very flat, not as flat as O(1) and very efficient compared to O(n) and O(n^2).
+
 ![image](https://user-images.githubusercontent.com/45565026/200108045-d4661b86-5d33-47a8-ba6e-c8a7ae975b47.png)
 
 
