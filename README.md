@@ -86,7 +86,7 @@ n represents the size of the input and as n grows the cost of this algorithm als
  => O(n)
 ```
 
- > If our method has two extera lines of code like below:
+ > If our method has two extra lines of code like below:
 ```
 public void Log(string[] input)
 {
@@ -104,7 +104,7 @@ public void Log(string[] input)
  > Now the runtime complexity of this method is O(1 + n + 1) which we can simplify to  O(2 + n). But when using the big o notation, we drop this constants because they don't really matter. Because if our array has one million inputs adding two extra operations doesn't really have a significant impact on the cost of our algorithm and the cost of our algorithm still increases linearly so we can simplify this by drop constants. What matters is that the cost of this algorithm increases linearly and in
 direct proportion to the size of our input.
 
- > If we repeat the loop over an array twice sperately, as shown below:
+ > If we repeat the loop over an array twice separately, as shown below:
 ```
 public void Log(string[] input)
 {
@@ -124,7 +124,7 @@ public void Log(string[] input)
 
  > We dropped the constant because all we need is an approximation of the cost of this algorithm relative to its input size. So n or two n still represent a linear growths. 
 
- > If we change the inputs of method to two array with diffirent sizes like this:
+ > If we change the inputs of method to two array with different sizes like this:
 
 ```
 public void Log(string[] input1, string[] input2)
@@ -150,7 +150,7 @@ public void Log(string[] input1, string[] input2)
 O(n) is always going to be a straight line, it is proportional to the number of operations.
 
 ## 💡 Quadratic time complexity or O(n^2): 
-> Suppose that we have a neted loop like this:
+> Suppose that we have a nested loop like this:
 
 ```
 public void Log(string[] input)
@@ -221,7 +221,7 @@ public void Log(string[] input)
 ## 💡 Logarithmic time complexity or O(log n): 
  > An algorithm that runs in logarithmic time is more efficient and more scalable than an algorithm that runs in linear or quadratic time. Supposed that we have an array of sorted number from one to ten and we want to find the number ten. One way to find the ten is to iterate over this array using a four loop going forward until we find the ten. This is called the linear search because it runs in linear time in the worst case scenario. In other word, if the number we're looking for is at the end of our array we have to inspect every cell in this array to find the target number so the more items we have the longer this operation is going to take. So the run time of this algorithm increases linearly and in direct proportion with the size of our array. 
  > 
- > But when we use binary search, the time complexity of the algoritem becomes logarithmic, which is so faster than linear one. 
+ > But when we use binary search, the time complexity of the algorithm becomes logarithmic, which is so faster than linear one. 
  > Assume that there is a sorted array and we're going to look for the number one
  
  ![image](https://user-images.githubusercontent.com/45565026/200105226-e1796ba4-6619-43db-aab3-f09ffd662322.png)
@@ -255,7 +255,7 @@ public void Log(string[] input)
 
 ![image](https://user-images.githubusercontent.com/45565026/200107378-0ed02391-a51e-47fa-b0d4-e29c19bc5e87.png)
 
-> The answer of the above equation is 3, which is the number the stpes we have to take to find the asnswer. To put it another way, if we take the number eight and we repeatedly cut it in half, we divide it by two, how many times do we have to divide it by two to get down to one item? that is three times.
+> The answer of the above equation is 3, which is the number the steps we have to take to find the answer. To put it another way, if we take the number eight and we repeatedly cut it in half, we divide it by two, how many times do we have to divide it by two to get down to one item? that is three times.
 
 > So if you had an array with a billion items in it and you were going to iterate through that array linearly to find something and say what you were looking for was the last item, you would have to look at a billion items to find it. But if you use divide and conquer, you could find any item in that array in thirty one steps.
 
@@ -267,4 +267,4 @@ public void Log(string[] input)
 
 
 ## 💡 Exponential time complexity or O(2^n): 
- > The exponential growth is the opposite of the logarithmic growth. The logarithmic curve slows down as the input size growth but exponential curve growths faster and faster. Therfore an algorithm that runs in exponential time is not scalable at all and it will become very slow very soon.
+ > The exponential growth is the opposite of the logarithmic growth. The logarithmic curve slows down as the input size growth but exponential curve growths faster and faster. Therefore an algorithm that runs in exponential time is not scalable at all and it will become very slow very soon.
